@@ -210,6 +210,10 @@ export default [
 		{
 			text: "devlop.dataGeneration.recipes",
 			link: "/develop/data-generation/recipes"
+		},
+		{
+			text: "devlop.dataGeneration.blockStates",
+			link: "/develop/data-generation/block-states"
 		}
 	  ]
   },
