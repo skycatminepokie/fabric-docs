@@ -40,7 +40,7 @@ blockStateModelGenerator.registerSimpleState(ModBlocks.CONDENSED_DIRT);
 
 Next we'll take a look at a block with varients depending on how the block is oriented. %%TODO: get confirmation on the comments%%
 
-@[code lang=java transcludeWith=:::datagen-block-states:oriented](@/reference/latest/src/client/java/com/example/docs/datagen/FabricDocsReferenceBlockStateProvider.java)
+@[code lang=java transcludeWith=:::datagen-block-states:axis-rotated](@/reference/latest/src/client/java/com/example/docs/datagen/FabricDocsReferenceBlockStateProvider.java)
 
 ::: tip
 This can also take advantage of helper methods!
@@ -48,3 +48,9 @@ This can also take advantage of helper methods!
 blockStateModelGenerator.registerAxisRotated(ModBlocks.CONDENSED_OAK_LOG, Registries.BLOCK.getId(ModBlocks.CONDENSED_OAK_LOG).withPrefixedPath("/block"));
 ```
 :::
+
+## Boolean Block State {#boolean-block-state}
+
+Now, let's generate a block state for a block that has a boolean property. This block was made in the [Block States](../blocks/blockstates) tutorial.
+
+@[code lang=java transcludeWith=:::datagen-block-states:boolean-state](@/reference/latest/src/client/java/com/example/docs/datagen/FabricDocsReferenceBlockStateProvider.java)
